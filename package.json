@@ -1,0 +1,15 @@
+{
+  "name": "curve-cuts",
+  "version": "1.0.0",
+  "description": "A small collection of curve smoothing algorithms.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/carewdavid/curve-cuts.git"
+  },
+  "author": "David Carew",
+  "license": "MIT"
+}
