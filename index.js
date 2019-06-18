@@ -4,7 +4,7 @@ function cut(start, end, ratio){
     return [r1, r2];
 }
 
-function chaikin(curve, ratio=0.25, iterations=1, closed=false){
+function chaikin(curve, iterations=1, closed=false, ratio=0.25){
     if(ratio > 0.5){
         ratio = (1 - ratio);
     }
@@ -12,13 +12,20 @@ function chaikin(curve, ratio=0.25, iterations=1, closed=false){
     for(let i = 0; i < iterations; i++){
         let refined = [];
         refined.push(curve[0]);
+
         for(let j = 1; j < curve.length; j++){
-            refined.concat(cut(curve[j - 1], curve[j], ratio));
+            let points = cut(curve[j - 1], curve[j], ratio);
+            refined = refined.concat(points);
         }
+
         if(closed){
-            refined.concat(cut(curve[curve.length - 1], curve[0]));
+            refined = refined.concat(cut(curve[curve.length - 1], curve[0]));
         }
+
         curve = refined;
     }
     return curve;
 }
+
+exports.chaikin = chaikin;
+exports.cut = cut;
