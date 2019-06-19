@@ -19,9 +19,9 @@ function chaikin(curve, iterations=1, closed=false, ratio=0.25){
         }
 
         if(closed){
-            refined = refined.concat(cut(curve[curve.length - 1], curve[0]));
+            refined = refined.concat(cut(curve[curve.length - 1], curve[0], ratio));
         }else{
-            refined.push(points[points.length - 1]);
+            refined.push(curve[curve.length - 1]);
         }
 
         curve = refined;
