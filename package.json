@@ -1,7 +1,7 @@
 {
   "name": "curve-cuts",
   "version": "1.0.0",
-  "description": "A small collection of curve smoothing algorithms.",
+  "description": "Chaikin's curve smoothing algorithm.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
