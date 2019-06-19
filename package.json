@@ -1,5 +1,5 @@
 {
-  "name": "curve-cuts",
+  "name": "chaikin",
   "version": "1.0.0",
   "description": "Chaikin's curve smoothing algorithm.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com/carewdavid/curve-cuts.git"
+    "url": "git@github.com/carewdavid/chaikin.git"
   },
   "author": "David Carew",
   "license": "MIT"
