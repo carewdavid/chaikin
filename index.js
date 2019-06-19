@@ -30,4 +30,3 @@ function chaikin(curve, iterations=1, closed=false, ratio=0.25){
 }
 
 exports.chaikin = chaikin;
-exports.cut = cut;
